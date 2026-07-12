@@ -1,9 +1,9 @@
 class Solution {
 
- static int divi(int[] arr,int mid){
+ static int divi(int[] arr,int divisor ){
     int wtv=0; 
     for(int i= 0;i<arr.length;i++){
-        wtv += Math.ceil((double)arr[i]/mid);
+        wtv += (arr[i] + divisor - 1) / divisor;;
         
     }
     return wtv;
@@ -14,10 +14,7 @@ class Solution {
         int n= nums.length;
         if(nums.length> threshold) return  -1;
 
-        // int max = Integer.MIN_VALUE;
-        // for(int i =0;i<n;i++){
-        //     max= Math.max(max, nums[i]);
-        // }
+    
 
         int low = 1;
         int high =1000000 ;
