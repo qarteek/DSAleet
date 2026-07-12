@@ -14,13 +14,13 @@ class Solution {
         int n= nums.length;
         if(nums.length> threshold) return  -1;
 
-        int max = Integer.MIN_VALUE;
-        for(int i =0;i<n;i++){
-            max= Math.max(max, nums[i]);
-        }
+        // int max = Integer.MIN_VALUE;
+        // for(int i =0;i<n;i++){
+        //     max= Math.max(max, nums[i]);
+        // }
 
         int low = 1;
-        int high = max;
+        int high =1000000 ;
 
         while(low<=high){
             int mid = (low+high)/2;
